@@ -9,8 +9,8 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			body {
-				background-image: url('images/bg.png');
-				background-size: cover;
+				background-image: url('images/tło/bg-wielkanoc.png');
+				background-size: auto;
 				background-position: center;
 				background-attachment: fixed;
 			}
@@ -49,39 +49,43 @@
 			
 			<!-- Karty galerii zdjęć -->
 			<article id="zd1">
-			<h2 class="major">Zdjęcia Dzień Elektryka 2025</h2>
-			<h6>zdjęcia: inż Michał Labudda</h6>
-			<div class="gallery" id="gallery1"></div>
-			<script>
-				const gallery1 = document.getElementById('gallery1');
-				const totalImages1 = 45; // Liczba zdjęć
+    <h2 class="major">Zdjęcia Dzień Elektryka 2025</h2>
+    <h6>zdjęcia: inż Michał Labudda</h6>
+    <div class="gallery" id="gallery1"></div>
+    <script>
+        const gallery1 = document.getElementById('gallery1');
+        const totalImages1 = 45; // Liczba zdjęć
 
-				for (let i = 1; i <= totalImages1; i++) {
-					const img = document.createElement('img');
-					img.src = `images/dzienelektryka2025/d (${i}).jpg`; // Ścieżka do zdjęć
-					img.alt = `d (${i})`;
-					gallery1.appendChild(img);
-				}
-			</script>
-			<h4><a href="index.html">Wróć</a></h4>
+        for (let i = 1; i <= totalImages1; i++) {
+            const img = document.createElement('img');
+            img.src = `images/dzienelektryka2025/d (${i}).jpg`; // Ścieżka do zdjęć
+            img.alt = `d (${i})`;
+            img.style.width = '300'; // Ustaw szerokość
+            img.style.height = 'auto'; // Ustaw wysokość na auto, aby zachować proporcje
+            gallery1.appendChild(img);
+        }
+    </script>
+    <h4><a href="index.html">Wróć</a></h4>
 </article>
 
-			<article id="zd2">
-			<h2 class="major">Zdjęcia Dzień Elektryka 2025</h2>
-			<h6>zdjęcia: inż Paweł Jędryczka</h6>
-			<div class="gallery" id="gallery2"></div>
-			<script>
-				const gallery2 = document.getElementById('gallery2');
-				const totalImages2 = 19; // Liczba zdjęć
+<article id="zd2">
+    <h2 class="major">Zdjęcia Dzień Elektryka 2025</h2>
+    <h6>zdjęcia: inż Paweł Jędryczka</h6>
+    <div class="gallery" id="gallery2"></div>
+    <script>
+        const gallery2 = document.getElementById('gallery2');
+        const totalImages2 = 19; // Liczba zdjęć
 
-				for (let i = 1; i <= totalImages2; i++) {
-					const img = document.createElement('img');
-					img.src = `images/dzienelektryka2025.2/a (${i}).jpg`; // Ścieżka do zdjęć
-					img.alt = `a (${i})`;
-					gallery2.appendChild(img);
-				}
-			</script>
-			<h4><a href="index.html">Wróć</a></h4>
+        for (let i = 1; i <= totalImages2; i++) {
+            const img = document.createElement('img');
+            img.src = `images/dzienelektryka2025.2/a (${i}).jpg`; // Ścieżka do zdjęć
+            img.alt = `a (${i})`;
+            img.style.width = '300'; // Ustaw szerokość
+            img.style.height = 'auto'; // Ustaw wysokość na auto, aby zachować proporcje
+            gallery2.appendChild(img);
+        }
+    </script>
+    <h4><a href="index.html">Wróć</a></h4>
 </article>
 			
 	</div>
